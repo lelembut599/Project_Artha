@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    word-break: break-all;
+}
+
+body {
+    min-height: 100vh;
+    padding: 0;
+    font-size: 16px;
+}
+
+.back{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--primary);
+    padding: 0px 150px;
+}
+
+.card {
+    display: flex;
+    background: var(--white);
+    padding: 50px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.08);
+    align-items: center;
+    column-gap: 30px;
+    margin: 30px 150px;
+}
+
+/* .image {
+    max-width: 450px;
+    flex: 0 0 450px;
+} */
+
+.image img {
+    border-radius: 15px;    
+    width: 350px;
+    height: 350px;
+}
+
+.detail {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.profile {
+    align-items: center;
+    margin-bottom: 20px;
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: space-between;
+
+}
+
+.profile-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+    /* margin-right: 15px; */
+} 
+
+.status{
+    display: block;
+    margin-left: 50px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 7px 18px;
+    justify-items: center;
+    color: var(--white);
+    background-color: var(--primary);
+    width: 200px;
+}
+
+.desc{
+    flex-direction: column;
+    margin-left: 5px;
+}
+.username{
+    font-size: 20px;
+    height: 60px;
+    width: 239px;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.desc p {
+    margin-bottom: 5px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.btn a {
+    color: var(--black);
+    width: 35%;
+    padding: 10px 15px;
+    background-color: var(--box);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    gap: 15px;
+    
+}
+.btn a p{
+    margin: 0;
+    font-weight: 500;
+}
+.btn a:hover{
+    background-color: #a4a4a4;
+}
+
+/* @media (min-width: 768px) and (max-width:1024px) {
+    .card{
+        flex-direction: row;
+        align-items: unset;
+
+    }
+    
+} */
+
+
+@media (max-width: 768px) {
+    .btn button {
+        width: 100%;
+    }
+    .back{
+        padding: 0 25px;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        height: auto;
+        min-height: auto;
+        margin: 25px;
+    }
+
+    .detail {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .image img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .status{
+        margin-left: 80px;
+    }
+    .btn {
+        width: 100%;
+    }
+    .profile{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .btn a{
+        width: 40%;
+    }
+}
