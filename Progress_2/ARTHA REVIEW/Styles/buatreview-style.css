@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 150px; /* Margin kanan dan kiri sebesar 150px */
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary);
+    font-size: 35px;
+    margin: -18px auto 10px;
+    font-weight: bold;
+}
+
+form {
+    flex: 2;
+}
+
+.form-card {
+    margin: 0 auto 30px;
+    width: 100%;
+    height: auto;
+    background: var(--white);
+    border-radius: 15px;
+    padding: 30px 50px 25px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.08);
+    display: flex; 
+    gap: 50px; 
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    color: var(--black);
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #F5F5F5;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #b91818;
+}
+
+.image-preview {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.image-preview img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: auto 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 20px; /* Margin lebih kecil untuk perangkat kecil */
+    }
+
+    .form-card {
+        display: grid;
+        padding: 20px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
